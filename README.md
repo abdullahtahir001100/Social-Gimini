@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Buchers - Unique & Vast System  
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-000?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/TypeScript-Language-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/SCSS-Styling-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framer_Motion-Animations-0055FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Lenis-SmoothScroll-111?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Biome-Linting-111?style=for-the-badge" />
+</p>
 
-First, run the development server:
+<p align="center">
+  A modern web application with geometric design, smooth animations, and premium interactive components.
+</p>
+
+---
+
+## 🚀 Tech Stack  
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)  
+- **Language:** [TypeScript](https://www.typescriptlang.org/)  
+- **Styling:** [SCSS](https://sass-lang.com/) + [Tailwind CSS](https://tailwindcss.com/)  
+- **Animations:** [Framer Motion](https://www.framer.com/motion/) + [Lenis](https://github.com/darkroomengineering/lenis) (Smooth Scroll)  
+- **Tooling:** [Biome](https://biomejs.dev/) (Linting & Formatting)  
+
+---
+
+## ✨ Key Features  
+
+- **Geometric Design System:** Sharp edges and structured visual hierarchy  
+- **Immersive UX:**  
+  - Custom interactive cursor  
+  - Smooth scrolling via Lenis  
+  - Animated content reveals with Framer Motion  
+- **Interactive Components:**  
+  - Hero video backgrounds  
+  - Sidebar navigation  
+  - Live status indicators  
+
+---
+
+## 📂 Project Structure  
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+src/
+├── app/
+│   ├── components/      # UI Components (HeroVideo, CustomCursor, etc.)
+│   ├── explore/         # Explore page route
+│   ├── global/          # Global page route
+│   ├── menu/            # Menu system (dynamic slug support)
+│   ├── orders/          # Order management system
+│   ├── layout.tsx       # Root layout with SmoothScroll & CustomCursor
+│   └── page.tsx         # Landing page (System v1.0 Dashboard)
+├── styles/              # Global SCSS styles
