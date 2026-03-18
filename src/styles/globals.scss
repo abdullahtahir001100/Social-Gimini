@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: $font-primary;
+  background-color: #f1f5f9;
+  color: $dark;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: #f1f5f9;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-left: 260px; /* Sidebar width */
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: $dark;
+}
+/* globals.scss */
+.cl-userButtonPopoverCard {
+  border: 3px solid #000 !important;
+  border-radius: 0px !important; // Sharp Brutalist edges
+  box-shadow: 8px 8px 0px #000 !important;
+  padding: 10px !important;
+}
+
+.cl-userButtonPopoverActionButton {
+  border-radius: 0px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  font-size: 0.8rem !important;
+  
+  &:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    
+    .cl-userButtonPopoverActionButtonIcon {
+      color: #fff !important;
+    }
+  }
+}
+/* globals.scss */
+.cl-userButtonPopoverFooter, 
+.cl-userAccountSwitcherFooter,
+.cl-internal-f67u6y { // Clerk's powered-by link
+  display: none !important;
+}
+
+.cl-userButtonPopoverCard {
+  border: 3px solid #000 !important;
+  box-shadow: 8px 8px 0px #000 !important;
+}

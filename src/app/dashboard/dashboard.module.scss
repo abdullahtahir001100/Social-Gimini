@@ -1,0 +1,158 @@
+@import '../../styles/variables.scss';
+
+// Standardized Production Variables
+$border-color: #1a1a1a;
+$subtle-border: #e5e7eb;
+$bg-main: #ffffff;
+
+.dashboard {
+  padding: 0;
+  background: $bg-main;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+
+  .topNav {
+    height: 48px;
+    border-bottom: 1px solid $subtle-border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+
+    .liveIndicator {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #10b981;
+      .pulse { font-size: 0.5rem; }
+    }
+  }
+
+  .header {
+    position: relative;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid $border-color;
+    overflow: hidden;
+    color: white; // Flip for dark mode with video
+
+    .headerVideo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      opacity: 0.8;
+    }
+
+    .headerOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+      z-index: 2;
+    }
+
+    .titleArea {
+      position: relative;
+      z-index: 3;
+      
+      h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.04em;
+        margin: 0;
+        line-height: 1;
+      }
+
+      p { color: rgba(255, 255, 255, 0.8); margin-top: 0.5rem; }
+    }
+
+    .datePicker {
+      position: relative;
+      z-index: 3;
+      padding: 0.5rem 1rem;
+      border: 2px solid rgba(255,255,255,0.3);
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .heroGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid $border-color;
+
+    .statCard {
+      padding: 2rem;
+      border-right: 1px solid $border-color;
+      &:last-child { border-right: none; }
+
+      .statLabel {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #666;
+        margin-bottom: 1rem;
+      }
+
+      .statValue {
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .statGrowth {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #10b981;
+        span { color: #999; font-weight: 400; margin-left: 0.25rem; }
+        &.neg { color: #ef4444; }
+      }
+    }
+  }
+
+  .mainGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    .chartBlock {
+      padding: 2rem;
+      border-right: 1px solid $subtle-border;
+      border-bottom: 1px solid $subtle-border;
+      
+      &.span2 { grid-column: span 2; }
+
+      .blockHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+        h3 {
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          font-weight: 800;
+          letter-spacing: 0.05em;
+        }
+      }
+
+      .chartWrapper { height: 300px; }
+    }
+  }
+}
