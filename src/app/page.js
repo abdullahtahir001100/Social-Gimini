@@ -88,7 +88,7 @@ export default function Home() {
         <motion.button 
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => router.push('/sign-in')}
+          onClick={() => router.push('/dashboard')}
           style={{ 
             marginTop: '3.5rem', padding: '1.25rem 3rem', fontSize: '1.1rem', fontWeight: 'bold', 
             background: 'white', color: '#0f172a', border: 'none', borderRadius: '50px', cursor: 'pointer',
@@ -161,7 +161,7 @@ export default function Home() {
       {/* FOOTER BANNER */}
       <section style={{ height: '40vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0f1d', position: 'relative', zIndex: 1 }}>
         <h2 style={{ fontSize: '5vw', fontWeight: 900, textTransform: 'uppercase', color: 'rgba(255,255,255,0.05)' }}>
-          Ready to deploy?
+          Ready to Use
         </h2>
       </section>
     </div>
